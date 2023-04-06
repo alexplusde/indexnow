@@ -1,12 +1,22 @@
 <?php
-class blaupause extends \rex_yform_manager_dataset
+class indexnow extends \rex_yform_manager_dataset
 {
-# https://github.com/yakamara/redaxo_yform/blob/master/docs/04_yorm.md#yorm-mit-eigener-model-class-verwenden
-# Nachfolgend ein Beispiel, um eigene Methoden zu erstellen
-/*
-    public function getName() :string
+    public function publishMedia() :string
     {
-        return $this->getValue('name');
     }
-*/
+    public function updateMedia() :string
+    {
+    }
+    public function removeMedia() :string
+    {
+    }
+    public function publishArticle() :string
+    {
+    }
+    public function updateArticle() :string
+    {
+    }
+    public function removeArticle() :string
+    {
+    }
 }
