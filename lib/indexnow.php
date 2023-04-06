@@ -1,6 +1,9 @@
 <?php
 class indexnow extends \rex_socket
 {
+    /* Todo: https://developers.google.com/search/apis/indexing-api/v3/using-api?hl=de */
+
+    /* Preconditions */
     public static function getApiKey() : ?string
     {
         return rex_config::get("indexnow", "apikey") ?? "";
@@ -19,6 +22,8 @@ class indexnow extends \rex_socket
     {
         return self::factoryUrl("https://www.bing.com/indexnow?url=".$url."&key=" . self::getApiKey($ep));
     }
+
+    /* EPs */
     public static function publishMedia($ep)
     {
         $params = $ep->getParams();
