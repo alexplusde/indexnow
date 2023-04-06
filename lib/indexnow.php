@@ -1,6 +1,10 @@
 <?php
 class indexnow extends \rex_socket
 {
+    const GOOGLEURL = "https://indexing.googleapis.com/v3/urlNotifications:publish";
+    const BING = "https://www.bing.com/indexnow";
+    const GOOGLETYPE = ["URL_UPDATED", "URL_DELETED"];
+    
     /* Todo: https://developers.google.com/search/apis/indexing-api/v3/using-api?hl=de */
 
     /* Preconditions */
@@ -20,7 +24,7 @@ class indexnow extends \rex_socket
 
     public static function getSocket($url)
     {
-        return self::factoryUrl("https://www.bing.com/indexnow?url=".$url."&key=" . self::getApiKey($ep));
+        return self::factoryUrl($bingUrl."?url=".$url."&key=" . self::getApiKey($ep));
     }
 
     /* EPs */
