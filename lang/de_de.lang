@@ -1,6 +1,6 @@
-indexnow_title = indexnow
+indexnow_title = IndexNow
 
-indexnow_table = indexnow
+indexnow_table = IndexNow
 indexnow_settings = Einstellungen
 indexnow_docs = Hilfe
 
@@ -8,9 +8,5 @@ indexnow_docs = Hilfe
 
 # Konfigurationsformulare
 indexnow_config = Einstellungen
-indexnow_config_apikey_label = Test-Feld
-indexnow_config_apikey_notice = Notiz, die etwas erklärt und bspw. einen Standardwert nennt. Hier: <code>Test</code>
-
-# YForm Tablelen-Übersetzung
-indexnow_table_name_label = Name
-indexnow_table_name_notice = Notiz, die etwas erklärt und auch einen Beispielwert nennen kann, z.B.: <code>Mein Name</code> 
+indexnow_config_apikey_label = Api-Key
+indexnow_config_apikey_notice = https://www.bing.com/indexnow

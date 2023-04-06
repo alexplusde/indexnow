@@ -9,8 +9,9 @@ requires:
         version: '^8'
     redaxo: ^5.13
     packages:
-        structure: true
-        mediapool: true
+        structure: ^2.15
+        mediapool: ^2.13
+        yrewrite: ^2
 
 page:
     title: translate:indexnow_title
