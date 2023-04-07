@@ -1,6 +1,6 @@
 <?php
 
-if(rex::isDebugMode()) {
+if(rex::isBackend() && !rex::isDebugMode()) {
 
 
     // https://github.com/yakamara/redaxo_yrewrite/blob/e10cd337e2685a9eb649494e29d21bcdb174f725/boot.php#L35-L50
